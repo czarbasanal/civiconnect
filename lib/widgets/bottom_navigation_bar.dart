@@ -47,8 +47,8 @@ class BottomNavBar extends StatelessWidget {
       BottomNavigationBarItem(
         icon: Icon(
           selectedIndex == 4
-              ? CupertinoIcons.video_camera_solid
-              : CupertinoIcons.video_camera,
+              ? CupertinoIcons.person_circle_fill
+              : CupertinoIcons.person_circle,
           size: 26,
         ),
         label: '',
@@ -62,12 +62,13 @@ class BottomNavBar extends StatelessWidget {
           child: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             elevation: 0,
-            // backgroundColor: AppStyles.colorScheme.primary,
             items: navBarIcons,
             currentIndex: selectedIndex,
             onTap: onItemTapped,
             showSelectedLabels: false,
             showUnselectedLabels: false,
+            selectedItemColor: Color(0xFFFF5722),
+            unselectedItemColor: Colors.grey,
           ),
         ),
         Positioned(
