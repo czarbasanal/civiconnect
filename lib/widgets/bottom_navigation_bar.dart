@@ -66,8 +66,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
       BottomNavigationBarItem(
         icon: Icon(
           _selectedIndex == 4
-              ? CupertinoIcons.video_camera_solid
-              : CupertinoIcons.video_camera,
+              ? CupertinoIcons.person_circle_fill
+              : CupertinoIcons.person_circle,
           size: 26,
         ),
         label: '',
@@ -88,6 +88,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
               onTap: _onItemTapped,
               showSelectedLabels: false,
               showUnselectedLabels: false,
+              selectedItemColor: Color(0xFFFF5722),
+              unselectedItemColor: Colors.grey,
             ),
           ),
           Positioned(
