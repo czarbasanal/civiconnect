@@ -65,7 +65,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       ),
       BottomNavigationBarItem(
         icon: Icon(
-          selectedIndex == 4
+          _selectedIndex == 4
               ? CupertinoIcons.person_circle_fill
               : CupertinoIcons.person_circle,
           size: 26,
