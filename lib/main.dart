@@ -6,7 +6,7 @@ import 'screens/search_screen.dart';
 import 'screens/write_screen.dart';
 import 'widgets/bottom_navigation_bar.dart';
 import 'package:civiconnect/screens/signup_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Navigation App',
+      title: '',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -56,7 +56,7 @@ class _MainScreenState extends State<MainScreen> {
         selectedIndex: _selectedIndex,
         onItemTapped: _onItemTapped,
       ),
-      home: SignUpScreen(), // Ensure SignUpScreen is a constant widget
+      // home: SignUpScreen(),
     );
   }
 }
