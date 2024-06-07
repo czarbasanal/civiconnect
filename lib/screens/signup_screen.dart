@@ -174,7 +174,10 @@ class SignUpScreen extends StatelessWidget {
               SizedBox(height: screenHeight * 0.05),
               ElevatedButton.icon(
                 onPressed: () {
-                  // Sign up logic
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SignInScreen()),
+                  );
                 },
                 label: Text(
                   'Sign Up',

@@ -1,4 +1,5 @@
 import 'package:civiconnect/screens/signup_screen.dart';
+import 'package:civiconnect/widgets/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
@@ -108,7 +109,10 @@ class SignInScreen extends StatelessWidget {
               SizedBox(height: screenHeight * 0.05),
               ElevatedButton.icon(
                 onPressed: () {
-                  // Sign up logic
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BottomNavBar()),
+                  );
                 },
                 label: Text(
                   'Sign In',

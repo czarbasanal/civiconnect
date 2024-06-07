@@ -7,6 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: SizedBox(
           height: 40,
           child: Image.asset("assets/images/Logo.png"),
